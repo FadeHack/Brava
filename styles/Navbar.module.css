@@ -1,0 +1,179 @@
+/* CSS for Navbar component (Navbar.module.css) */
+
+.nav {
+  background: #212122;
+
+  font-family: "Made Tommy Soft Regular";
+}
+
+/* Left section styling */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Middle section styling */
+.navbar-middle {
+  flex-grow: 1;
+  text-align: center;
+  color: #fff; /* Set text color for better readability */
+  max-height: 5vh;
+  width: auto;
+}
+
+/* Right section styling */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Styling for social icons */
+.navbar-right .social-icon {
+  color: #fff;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Styling for search and cart icons */
+.navbar-right .search-icon,
+.navbar-right .cart-icon {
+  color: #fff;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Styling for buttons in the left section */
+.navbar-left button {
+  color: #fff;
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition for color and border-bottom change */
+}
+
+/* Hover effects */
+.aff:hover,
+.navbar-right .social-icon:hover,
+.navbar-right .search-icon:hover,
+.navbar-right .cart-icon:hover,
+.navbar-left button:hover {
+  color: #e1c300;
+}
+
+/* Underline effect */
+.navbar-left button:hover::before,
+.aff:hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Adjust this value as needed */
+  width: 100%;
+  height: 2px;
+  background-color: #e1c300;
+  animation: underline 0.3s ease; /* Animation for the left-to-right effect */
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.fullWidthMenu {
+  width: 100%;
+  margin-top: 0%;
+}
+
+/* Shop menu styles */
+.shopSection {
+  width: 100vw;
+  padding-left: 1vw;
+  margin-top: 2%;
+  background: #212122;
+  color: #fff;
+}
+
+.shopItem {
+  margin-bottom: 5px;
+  padding: 1vh;
+}
+.brandName{
+  width:25vw;
+  display: flex;
+  justify-content: center;
+}
+.brands {
+  padding: 10px;
+}
+
+/* Logo styles */
+.navbar-logo {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 600px) {
+  .navbar-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-right {
+    justify-content: flex-end;
+  }
+
+  .navbar-middle {
+    margin: 10px 0;
+  }
+
+  .navbar-left button {
+    margin-bottom: 10px;
+  }
+
+  .fullWidthMenu {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* Hamburger icon styles */
+.navbar-right button {
+  display: none;
+}
+}
+
+
+
+@media (max-width: 600px) {
+  .navbar-right button {
+    display: block;
+    color: #fff;
+  }
+}
+
+
+
+/* Add this to your Navbar.module.css */
+.mobileMenu {
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  width: 100vw;
+  height:100%;
+  background-color: #212122; /* Adjust background color as needed */
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.mobileMenu Button {
+  margin: 10px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

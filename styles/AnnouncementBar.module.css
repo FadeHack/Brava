@@ -1,0 +1,17 @@
+/* CSS for AnnouncementBar component (AnnouncementBar.module.css) */
+
+.customToolbar {
+  background: #E1C300;
+  color: #000; 
+  min-height: max-content !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.text{
+  padding: 10px 0;
+}
+
+
+
