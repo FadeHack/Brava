@@ -1,6 +1,6 @@
 # Project Name
 
-[Project Name Here]
+Brava Replica
 
 ## Technology Used
   - [Next.js](https://nextjs.org/)
@@ -27,4 +27,3 @@ To run this project locally, follow these steps:
 - Start the development server: `npm run dev` or `yarn dev`
 - Open your browser and go to [http://localhost:3000](http://localhost:3000)
 
-[Add any additional steps or considerations for running the project]
